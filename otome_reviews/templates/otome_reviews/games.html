@@ -1,0 +1,21 @@
+{% extends "otome_reviews/base.html" %}
+
+{% block content %}
+
+<h2>Games</h2>
+
+<ul>
+	{% for game in games %}
+	
+		<p><li>
+			<a href="{% url 'otome_reviews:game' game.id %}">{{ game }}</a>
+	
+		</li></p>
+		
+	{% empty %}
+		<li>No games have been added yet.</li>
+		
+	{% endfor %}
+</ul>
+
+{% endblock content %}

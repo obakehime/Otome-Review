@@ -1,0 +1,15 @@
+{% extends "otome_reviews/base.html" %}
+
+{% block content %}
+
+<h2>Otome Review</h2>
+
+<p>Otome Review provides game reviews and route tips for otome games. Click one of the links below
+to access different sections of the site!</p>
+
+	<h3><p><a href="{% url 'otome_reviews:games' %}">- Games -</a></p>
+	
+	
+	<p><a href="{% url 'otomepoll:index' %}">- Polls -</a></p></h3>
+
+{% endblock content %}
